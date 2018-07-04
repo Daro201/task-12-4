@@ -1,5 +1,6 @@
+//variables
 var url = 'http://api.icndb.com/jokes/random';
-
+var paragraph = document.getElementById('joke');
 
 
 var button = document.getElementById('get-joke');
@@ -8,8 +9,7 @@ var button = document.getElementById('get-joke');
 });
 
 
-var paragraph = document.getElementById('joke');
-
+//function getting information from the server
 function getJoke() {
   	var xhr = new XMLHttpRequest();
   	xhr.open('GET', url);
